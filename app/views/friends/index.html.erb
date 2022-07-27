@@ -1,0 +1,30 @@
+<h1>Friends List</h1>
+
+<table class="table table-dark table-striped-columns">
+  <thead>
+    <tr class="">
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Twitter</th>
+      <th>Your Id: <% if user_signed_in? %> <%= current_user.id %> <% end %></th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @friends.each do |friend| %>
+      <tr class="">
+        <td >
+          <%= link_to friend.first_name + friend.last_name, friend, class:"link"%>
+        </td>
+        <td><%= friend.email %></td>
+        <td><%= friend.phone %></td>
+        <td><%= friend.twitter %></td>
+        <td>Id: <%= friend.user_id %></td>
+        <td><%= link_to 'Delete',friend, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
