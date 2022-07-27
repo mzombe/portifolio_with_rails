@@ -1,11 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello my names is Joao Carmona Welcome to my portfolio
 
-Things you may want to cover:
+Ruby version: 3.1.2p20
 
-* Ruby version
+Rails version: 6.1.3.2
+
+Devise version: 4.8.1
+
 
 * System dependencies
 
