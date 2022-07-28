@@ -17,7 +17,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'devise', '~> 4.8', '>= 4.8.1'
-gem 'net-smtp', '~> 0.3.1'
+gem 'net-smtp', '~> 0.3.1', require: false
 
 
 # Use Redis adapter to run Action Cable in production
@@ -45,9 +45,10 @@ group :development do
   gem 'sqlite3', '~> 1.4'
 end
 
-
-gem 'pg', '~> 1.4', '>= 1.4.2', group: :production
-gem 'rails_12factor', '0.0.2', group: :production
+group :production do
+  gem 'pg', '~> 1.4', '>= 1.4.2'
+  gem 'rails_12factor', '0.0.2'
+end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
