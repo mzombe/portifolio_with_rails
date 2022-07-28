@@ -29,7 +29,7 @@ gem 'net-smtp', '~> 0.3.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 
-gem 'bootsnap', '~> 1.13'
+gem 'bootsnap', '~> 1.13', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
