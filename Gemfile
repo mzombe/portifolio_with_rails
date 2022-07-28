@@ -17,7 +17,6 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'devise', '~> 4.8', '>= 4.8.1'
-gem 'net-smtp', '~> 0.3.1', require: false
 
 
 # Use Redis adapter to run Action Cable in production
