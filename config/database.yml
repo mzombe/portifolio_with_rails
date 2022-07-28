@@ -21,7 +21,3 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: appform_production
-  username: <dbfriends>
-  password: <%= ENV["APPFORM_DATABASE_PASSWORD"] %>
