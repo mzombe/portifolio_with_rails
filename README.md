@@ -9,3 +9,5 @@ Rails version: 6.1.3.2
 Devise version: 4.8.1
 
 sqlite3 version: 1.4
+
+pg version: 1.4.2
