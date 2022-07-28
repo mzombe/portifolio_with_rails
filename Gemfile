@@ -19,6 +19,13 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.7'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'net-smtp', '~> 0.3.1'
+
+group :production do
+  gem 'pg', '~> 1.4', '>= 1.4.2'
+  #gem 'rails_12factor, '0.0.2'
+end
+
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
