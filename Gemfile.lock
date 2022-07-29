@@ -88,7 +88,6 @@ GEM
       warden (~> 1.2.3)
     digest (3.1.0)
     erubi (1.10.0)
-    ffi (1.15.5)
     ffi (1.15.5-x64-mingw-ucrt)
     ffi (1.15.5-x86-mingw32)
     globalid (1.0.0)
@@ -120,10 +119,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.8-x86-mingw32)
       racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-linux)
-      racc (~> 1.4)
     orm_adapter (0.5.0)
-    pg (1.4.2)
     pg (1.4.2-x64-mingw-ucrt)
     pg (1.4.2-x86-mingw32)
     public_suffix (4.0.7)
@@ -231,7 +227,6 @@ GEM
 PLATFORMS
   x64-mingw-ucrt
   x86-mingw32
-  x86_64-linux
 
 DEPENDENCIES
   bootsnap (~> 1.13)
