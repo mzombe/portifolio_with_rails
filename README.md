@@ -1,6 +1,6 @@
 # README
 
-Hello my names is Joao Carmona Welcome to my portfolio..............
+Hello my names is Joao Carmona Welcome to my portfolio.
 
 Ruby version: 3.1.2p20
 
