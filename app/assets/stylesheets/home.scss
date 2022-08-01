@@ -19,9 +19,14 @@ body {
     background-image: url("bg_card.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    width: 600px;
 }
 
+@media (max-width: 767px) {
+    .maincard{
+        width: 100vw;
+    }
+}
 
 .music{
     display: inline-flex;
