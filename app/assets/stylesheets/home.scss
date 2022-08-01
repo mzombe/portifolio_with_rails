@@ -10,8 +10,18 @@
     text-decoration: none;
 }
 body {
-    background-color: darkgray;
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+.maincard{
+    background-image: url("bg_card.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 960px;
+}
+
 
 .music{
     display: inline-flex;
