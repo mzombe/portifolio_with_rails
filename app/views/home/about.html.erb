@@ -1,1 +1,359 @@
-<h1> About Us... </h1>
+        <!----------------------------------------- carousel ----------------------------------------->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <%= image_tag "carousel/pexels-fox-3829227.jpg", class:"d-block w-100" %>
+                   <div class="carousel-caption d-none d-md-block">
+                        <h5>Lorem Ipsum</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <%= image_tag "carousel/pexels-lalesh-aldarwish-194511.jpg", class:"d-block w-100" %>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lorem Ipsum</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <%= image_tag "carousel/pexels-pavel-danilyuk-7776224.jpg", class:"d-block w-100" %>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lorem Ipsum</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <%= image_tag "carousel/pexels-rodnae-productions-7915250.jpg", class:"d-block w-100" %>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lorem Ipsum</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <%= image_tag "carousel/pexels-tomasz-filipek-1637438.jpg", class:"d-block w-100" %>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Lorem Ipsum</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--------------------------------------- fim carousel --------------------------------------->
+
+
+        <!-- Conteúdo principal -->
+        <main class="container my-3">
+            <!--------------------------------------- GRID MARKUP --------------------------------------->
+            <div class="row" id="videos">
+                <h5 class="my-3 display-5 titulos text-center darkcolor">Great Classics</h5>
+                <div class="col-md-6 my-2">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <h3 class="card-title titulos">Cuphead</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt illum debitis
+                                asperiores facere adipisci, fugiat, possimus, eveniet culpa nisi rem tempore nam?
+                                Eligendi, magnam quaerat.
+                            </p>
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/NN-9SQXoi50" title="YouTube video"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 my-2">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <h3 class="card-title titulos">Alex Kidd</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa harum maiores quibusdam.
+                                Odio est quis voluptas maxime provident tenetur fugiat voluptatem error, officiis,
+                                excepturi voluptates.
+                            </p>
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/yasiyS7dkcU" title="YouTube video"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--------------------------------------- FIM GRID MARKUP ----------------------------------->
+
+
+            <!---------------------------------------- ACCORDION--------------------------------------->
+            <div class="row my-3" id="studio">
+                <h5 class="my-3 display-5 titulos text-center darkcolor">Studio</h5>
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+
+                        <!-- 1o. item accordion -->
+                        <div class="accordion-item my-4">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed titulos" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    Our Studio
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body lead">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim 1o. item accordion -->
+
+                        <!-- 2o. item accordion -->
+                        <div class="accordion-item  my-4">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed titulos" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Projects
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body lead">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim 2o. item accordion -->
+
+                        <!-- 3o. item accordion -->
+                        <div class="accordion-item  my-4">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed titulos" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Our Team
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body lead">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim 3o. item accordion -->
+
+                        <!-- 4o. item accordion -->
+                        <div class="accordion-item  my-4">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed titulos" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    Portfolio
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body lead">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim 4o. item accordion -->
+
+                        <!-- 5o. item accordion -->
+                        <div class="accordion-item  my-4">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed titulos" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                                    aria-controls="collapseFive">
+                                    Work With US
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body lead">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim 5o. item accordion -->
+
+                    </div>
+                </div>
+            </div>
+            <!-----------------------------------FIM ACCORDION--------------------------------------->
+
+            <!--------------------------------------------- CARD-------------------------------------------->
+            <div class="row my-3" id="games">
+                <h5 class="my-3 display-5 titulos text-center darkcolor">Games</h5>
+
+                <!-- 1o. card  -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card border-0">
+                        <%= image_tag "about/mini2.jpg", class:"card-img-top" %>
+                        <div class="card-body">
+                            <h5 class="card-title titulos">Rally XPTO</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-outline-primary">Buy <i class="bi bi-cart3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim 1o. card -->
+
+                <!-- 2o. card  -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card border-0">
+                        <%= image_tag "about/mini5.jpg", class:"card-img-top" %>
+                        <div class="card-body">
+                            <h5 class="card-title titulos">WAR III</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-outline-primary">Buy <i class="bi bi-cart3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim 2o. card -->
+
+                <!-- 3o. card  -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card border-0">
+                        <%= image_tag "about/mini6.jpg", class:"card-img-top" %>
+                        <div class="card-body">
+                            <h5 class="card-title titulos">Mario Race</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-outline-primary">Buy <i class="bi bi-cart3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim 3o. card -->
+
+                <!-- 4o. card  -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card border-0">
+                        <%= image_tag "about/mini7.jpg", class:"card-img-top" %>
+                        <div class="card-body">
+                            <h5 class="card-title titulos">Assassins Creed</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-outline-primary">Buy <i class="bi bi-cart3"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim 4o. card -->
+
+            </div>
+            <!------------------------------------------FIM CARD-------------------------------------------->
+
+            <!------------------------------------------CONTATO-------------------------------------------->
+            <h5 class="mt-5 mb-1 display-5 titulos text-center darkcolor">Contact</h5>
+            <form action="">
+                <div class="row my-2" id="contato">
+
+                    <!-- Campo nome -->
+                    <div class="col-12 col-sm-12 col-md-4 my-3">
+                        <label for="nome" class="form-label darkcolor">Name</label>
+                        <input type="text" name="nome" id="nome" class="form-control" placeholder="Ex: joao carmona"
+                            required>
+                    </div>
+                    <!-- Fim Campo nome -->
+
+                    <!-- Campo email -->
+                    <div class="col-12 col-sm-12 col-md-4 my-3">
+                        <label for="email" class="form-label darkcolor">Email</label>
+                        <input type="email" name="email" id="email" class="form-control"
+                            placeholder="youremail@email.com" required>
+                    </div>
+                    <!-- Fim Campo email -->
+
+                    <!-- Campo assunto -->
+                    <div class="col-12 col-sm-12 col-md-4 my-3">
+                        <label for="assunto" class="form-label darkcolor">Subject</label>
+                        <select name="assunto" id="assunto" class="form-select">
+                            <option value="0" disabled selected>Select</option>
+                            <option value="1">Give a Compliment</option>
+                            <option value="2">Make a Question</option>
+                            <option value="3">Other Subject</option>
+                        </select>
+                    </div>
+                    <!-- Fim assunto-->
+
+                    <!-- Campo mensagem -->
+                    <div class="col-12 col-sm-12 my-3">
+                        <label for="mensagem" class="form-label darkcolor">Message</label>
+                        <textarea name="mensagem" id="mensagem" class="form-control"
+                            placeholder="Your Message"></textarea>
+                    </div>
+                    <!-- Fim Campo mensagem -->
+
+                    <!-- botão de envio -->
+                    <div class="d-flex justify-content-end mb-5">
+                        <button class="btn btn-primary btn-lg">Send</button>
+                    </div>
+
+                </div>
+            </form>
+            <!----------------------------------------FIM CONTATO-------------------------------------------->
+        </main>
+        <!-- Fim Conteúdo principal -->
+
+    

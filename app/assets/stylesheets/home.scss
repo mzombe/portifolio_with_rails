@@ -3,7 +3,6 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 .darkcolor{
     color: rgb(255,255,255);
-    background-color: rgb(66, 70, 76);
     text-align: center;
 }
 .link{
@@ -14,12 +13,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Open Sans', sans-serif;
 }
 .maincard{
     background-image: url("bg_card.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 600px;
+    width: 767px;
 }
 
 @media (max-width: 767px) {
@@ -89,4 +89,79 @@ body {
     animation-delay: 0.2s;
 }
 
-// esta sendo usado na list de show
+//about
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:wght@300&display=swap');
+
+
+.navbar,
+.titulos {
+    font-family: 'Acme', sans-serif;
+}
+
+
+.cor__roxa {
+    background-color: rgb(27, 11, 53);
+}
+
+.icone {
+    color: #dc143c;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #dc143c !important;
+}
+
+/* carousel */
+.carousel-inner,
+.carousel-item {
+    max-height: 80vh;
+}
+
+textarea {
+    resize: none;
+    height: 170px;
+}
+
+
+.footer {
+    position: relative;
+    height: 60vh;
+    background-color: rgb(27, 11, 53);
+}
+
+
+/*---------------------------------------------------- nuvens------------------------------------------------------- */
+.custom-shape-divider-top-1634222718 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1634222718 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 141px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1634222718 .shape-fill {
+    fill: #F4F4F4;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1634222718 svg {
+        width: calc(109% + 1.3px);
+        height: 92px;
+    }
+}
+/*--------------------------------------------------- fim nuvens--------------------------------------------------- */
