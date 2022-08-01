@@ -19,7 +19,7 @@ body {
     background-image: url("bg_card.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 960px;
+    
 }
 
 
@@ -40,6 +40,7 @@ body {
     animation: up_down 1.5s ease-in-out
     infinite;
 }
+
 
 #app{
     color: rgb(255, 255, 255);
