@@ -205,10 +205,6 @@
     border: none;
   }
 
-  .containeraccordion {
-    width: 75vh;
-  }
-
   .accordion-body {
     font-size: 26px;
   }
@@ -219,6 +215,17 @@
     font-size: 55px;
   }
 
+  @media (max-width: 990px) {
+    .form-cta {
+      grid-template-columns: 150px 150px;
+    }
+    
+    .video-tv {
+      display: none;
+    }
+
+
+  }
 
 
 
