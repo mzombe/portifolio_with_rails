@@ -215,18 +215,6 @@
     font-size: 55px;
   }
 
-  @media (max-width: 990px) {
-    .form-cta {
-      grid-template-columns: 150px 150px;
-    }
-    
-    .video-tv {
-      display: none;
-    }
-
-
-  }
-
 
 .logo img {
     height: 45px;
@@ -237,7 +225,7 @@
     padding: 60px;
     z-index: 90;
     position: relative;
-    max-width: 450px;
+    width: 450px;
     height: 600px;
     margin-left: 50%;
     background-color: rgba(0, 0, 0, 0.75);
@@ -347,3 +335,24 @@
 }
 
   
+@media (max-width: 990px) {
+  .form-cta {
+    grid-template-columns: 150px 150px;
+  }
+  
+  .video-tv {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .login_body {
+    width: 85vw;
+    
+  }
+  .panellogin {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
