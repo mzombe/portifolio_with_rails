@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'netflix/index'
   devise_for :users
   resources :friends
   get 'home/about'
