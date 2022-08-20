@@ -2,18 +2,17 @@
 <div class="header d-flex justify-content-between">
     <div class="me-auto p-2"><%= image_tag "netflix/netflix.svg", draggable:"false" %></div>
     <div class="dropdown p-2">
-    <button class="btn dropdown-toggle btn-outline-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Português
-    </button>
-    <ul class="dropdown-menu">
-        <li><i class="dropdown-item" href="#">Inglês</i></li>
-        <li><i class="dropdown-item" href="#">Espanhol</i></li>
-    </ul>
+        <button class="btn dropdown-toggle btn-outline-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Português
+        </button>
+        <ul class="dropdown-menu">
+            <li><i class="dropdown-item" href="#">Inglês</i></li>
+            <li><i class="dropdown-item" href="#">Espanhol</i></li>
+        </ul>
     </div>
-    <div class="p-2"><a href="#">Entrar</a></div>
+    <div class="mt-2"><%= link_to 'Entrar', netflix_login_path %></div>
 </div>
-<div>
-    <main class="main">
+<main class="main">
       <div class="main-child">
         <h1>Filmes, séries e muito mais. Sem limites.</h1>
         <span>Assista onde quiser. Cancele quando quiser.</span>
