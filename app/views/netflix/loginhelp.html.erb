@@ -1,0 +1,52 @@
+<div class="headerhelp d-flex justify-content-between">
+    <div class="me-auto p-2"><%= image_tag "netflix/netflix.svg", draggable:"false" %></div>
+    <div class="mt-2"><%= link_to 'Entrar', netflix_login_path%></div>
+</div>
+
+<div class="mainlogin">
+    <div class="login_body_help">
+        <div class="panellogin">
+            <h2>Esqueci meu email / senha</h2>
+            
+            <form>
+                <p>
+                    Como você prefere redefinir sua senha?
+                </p>
+                <div class="support ps-4">
+                    <div class="d-flex flex-column">
+                        <div class="list-group-item mb-2">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="firstRadio" checked>
+                            <label class="form-check-label" for="firstRadio">Email</label>
+                        </div>
+                        <div class="list-group-item mb-2">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value="" id="secondRadio">
+                            <label class="form-check-label" for="secondRadio">Mensagem de Texto</label>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="mb-3">
+                    Enviaremos um email com instruções de como redefinir sua senha.
+                </p>
+                <input type="email" placeholder="nome@exemplo.com" class="form-control border-dark rounded-0" id="inputEmail4">
+                <div class="pt-4">
+                    <button class="">
+                        Enviar por email
+                    </button>
+                </div>
+            </form>
+
+            <div class="login_footer">
+                <div class="sign_up mt-4">
+                    <p><a href="#">Não me lembro do meu email ou telefone.</a></p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="terms">
+            <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais</a></p>
+        </div>
+    <div class="gradient"></div>
+</div>
+    

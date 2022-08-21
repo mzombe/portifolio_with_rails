@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   get 'netflix/index'
   get 'netflix/login'
+  get 'netflix/loginhelp'
   devise_for :users
   resources :friends
   get 'home/about'
